@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrículas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Sistema de Matrículas</h1>
+        <hr>
+
+        <h3>Seleccione un curso:</h3>
+        <form action="/confirmacion" method="post">
+            <form class="form-group" action="/confirmacion" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Curso:</label>
+                  <select class="form-control" id="exampleInputEmail1" name="curso">
+                    <option value="Java">Java</option>
+                    <option value="PHP">PHP</option>
+                    <option value="NET">NET</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkbox">Nivel:</labe><br/>
+                    <input id="checkbox" type="checkbox" name="niveles[]" value="Basico">Basico<br/>
+                    <input id="checkbox" type="checkbox" name="niveles[]" value="Intermedio">Intermedio<br/>
+                    <input id="checkbox" type="checkbox" name="niveles[]" value="Avanzado">Avanzado<br/>
+                </div>
+                <div class="form-group">
+                    <label for="medioPago">Medio de Pago:</label><br/>
+                    <input type="radio" name="medioPago" value="Tarjeta de credito"> Tarjeta de credito<br>
+                    <input type="radio" name="medioPago" value="Efectivo"> Efectivo<br>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Confirmar Matricula</button>
+        </form>
+    </div>
+</body>
+</html>
+
+    
